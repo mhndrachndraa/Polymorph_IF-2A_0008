@@ -13,4 +13,9 @@ public class Makanan extends Produk {
         return hitungTotalHarga(jmlhBeli) * 0.95;
     }
 
+    @Override
+    public void tampilInfo() {
+        super.tampilInfo();
+    }
+
 }
