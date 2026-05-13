@@ -23,6 +23,8 @@ public class Kasir {
             p.setStok(jmlhBeli);
         }
 
+        System.out.println("Stok terbaru= " + p.getStok());
+
     }
 
 }
