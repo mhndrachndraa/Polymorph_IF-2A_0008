@@ -11,4 +11,18 @@ public class Kasir {
         System.out.println("Nama Kasir: " + namaKasir);
     }
 
+    public void prosesBelanja(Produk p, int jmlhBeli) {
+
+        if (p.getStok() < jmlhBeli) {
+            System.out.println("Out of stok");
+        }
+
+        {
+            double hargaAkhir = p.hitungHargaAkhir(jmlhBeli);
+            System.out.println("Harga Akhir = " + hargaAkhir);
+            p.setStok(jmlhBeli);
+        }
+
+    }
+
 }
